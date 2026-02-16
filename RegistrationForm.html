@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initialscale=1.0">
+	<title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+		body{
+			background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pamantasan_ng_Lungsod_ng_Marikina_-_GH_Campus.jpg/1280px-Pamantasan_ng_Lungsod_ng_Marikina_-_GH_Campus.jpg);
+			font-family: arial;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+			}
+        .container{
+            background-color: white;
+            width: 650px;
+            padding: 25px;
+            margin: 15px auto 0;
+            border-top: 5px solid rgb(3, 74, 207);
+            border-radius: 30px;
+            box-shadow: 0 0 20px rgba(7, 6, 6, 0.5);
+            margin-bottom: 150px;
+            font-family: poppins;
+            }
+        .container h2{
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+
+        .PLMAR{
+            background-color: rgb(0, 29, 160);
+            width: 750px;
+            padding: 25px;
+            margin: 110px auto 0;
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(7, 6, 6, 0.5);
+            margin-bottom: 5px;
+            color: white;
+            text-shadow: 0 1px 1px black;
+            font-family: poppins;
+            text-align: center;
+            font-size: 2.4em;
+            }
+        .PLMAR h3{
+            font-family: poppins;
+            text-align: center;
+            font-size: 0.7em;
+            }
+
+
+        .PLMAR2 {
+            background-color: rgb(238, 64, 41);
+            width: 750px;
+            padding: 25px;
+            margin: 110px auto 0;
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(7, 6, 6, 0.5);
+            margin-bottom: 5px;
+            color: rgb(243, 243, 243);
+            text-shadow: 0 1px 1px black;
+            font-family: poppins;
+            text-align: center;
+            font-size: 2.4em;
+            }
+        .PLMAR2 h3{
+            font-family: poppins;
+            text-align: center;
+            font-size: 0.7em;
+            }
+        .PLMAR2 button{
+            background-color: rgba(241, 228, 236, 0.795);
+            color: rgb(231, 220, 220);
+            height: 35px;
+            line-height: 35px;
+            width: 100%;
+            font-size:18px ;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 20px;
+            }
+             .PLMAR2 button:hover{
+                background-color:rgb(240, 240, 240) ;
+            }
+
+        .input-name{
+            width: 90%;
+            position: relative;
+            margin: 20px auto;
+        }   
+        .input-name i{
+            position: absolute;
+            font-size: 20px;
+            color: rgb(8, 123, 218);
+            border-right: 1px solid #bbb;
+        }   
+        .input-name span{
+            margin-left: 35px;
+        }   
+        .text-name{
+            width: 100%;
+            padding: 8px 0 8px 40px;
+        }
+        .radio-name{
+            width: 90%;
+            position: relative;
+            margin: 20px auto;
+        }
+        .radio-name i{
+          color: rgb(8, 123, 218) ;
+        }
+        .area-name{
+            width: 100%;
+            height: 6em ;
+            padding: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .name{
+            width: 45%;
+            padding: 8px 0 8px 40px;
+        }
+        .line{
+            padding: 8px 11px;
+        }
+        .line2{
+            padding: 8px 8px;
+        }
+        input[type="file"] {
+            display : none;
+        }
+        .file{
+            width: 90%;
+            position: relative;
+            margin: 20px auto;
+        }
+        .file Label {
+            padding: 10px 0;
+            height: 150px; 
+            width: 100%;
+            border-radius: 6px;
+            margin: 10px 0 20px 0;
+            border: 1px dashed #999;
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .file label:hover {
+            Color: #2759e0;
+            Border: 1px dashed #2759e0;
+        }
+        button{
+            background-color: rgb(49, 151, 235);
+            color: white;
+            height: 35px;
+            line-height: 35px;
+            width: 100%;
+            font-size:18px ;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color:rgb(11, 61, 226) ;
+        }
+        
+        
+
+
+        @media (max-width: 550px) {
+            .PLMAR{
+                width: 100%;
+                background-color: rgba(4, 34, 167, 0.959);
+                margin-top: 10px;
+            }
+            .container{
+                width: 100%;
+                background-color: rgba(15, 27, 83, 0.952);
+                color: white;
+            }
+            .input-name{
+                margin-bottom: -10px;
+            }
+            .name{
+                width: 100%;
+                padding: 8px 0 8px 40px;
+                margin-bottom: 10px;
+            }
+            .input-name span{
+                padding: 0;
+                margin: 0   z;
+            }
+            .radio-name i{
+                color: rgb(187, 169, 169) ;
+            }   
+            .button:hover{
+                background-color:rgb(18, 50, 156) ;
+            }
+            .radio-name i{
+                font-size: 20px;
+                color: rgb(204, 217, 241);
+                text-shadow: 0 0 10px 20px black;
+            }   
+        }
+
+	</style>
+</head>
+
+<body>
+
+	<div class="PLMAR">
+            
+        <h1>PLMAR</h1>
+			
+        <h3>Pamantasan ng Lungsod ng Marikina</h3>
+				
+    </div>
+    
+
+
+    <div class="PLMAR2" id="signup" style="display:none;">
+            
+        <h1>Valentines Event</h1>
+            
+        <h3>A day full of love and passion!</h3>
+            
+        <button type="Button"><a href="Mainpage.html">Click here to teleport to Valentines day Gallery</a></button>
+    </div>  
+   
+   
+   
+    <div class="container" id="signIn">
+		
+        <h2> Login Form</h2><br>
+        <div class="form-container"></div>
+			
+        <form id="myForm" onsubmit="return Validate()">
+				
+                <div class="input-name">
+                    <h3>Put your Legal name</h3>
+					
+                    <i class="fa fa-user line"></i>
+					<input type="text" placeholder="First Name" class="name" id="fname" required>
+					
+					<span>
+						<i class="fa fa-user line"></i>
+						<input type="text" placeholder="Last Name" class="name" id="lname" required> 
+					</span><br><br>
+				</div>
+				
+
+                <div class="input-name">
+				<h3>Contact Email Information</h3>
+					<i class="fa fa-envelope email line2"></i>
+					<input type="email" placeholder="Email" class="text-name" id="email" required>
+                </div>
+
+
+                <div class="input-name">
+					<i class="fa fa-lock line"></i>
+					<input type="password" placeholder="Password" class="text-name" id="pass" required> 
+                    <br><br>
+				</div>
+
+                <div class="input-name">
+                    <h3>Contact Number Information</h3>
+					<i class="fa fa-phone-square line"></i>
+					<input type="contact-number" placeholder="Contact Number" class="text-name" id="number" required> 
+                    <br><br>
+				</div>
+				
+
+                <div class="radio-name">
+				    <h4>Please select your Gender:</h4>
+                    
+                    <i class="fa fa-mars"></i>
+					<input type="radio" id="rad" name="gender" value="Male">
+					<label for="html">Male</label><br>
+                    
+                    <i class="fa fa-venus"></i>
+					<input type="radio" id="rad" name="gender" value="Female">
+					<label for="html">Female</label><br>
+                    
+                    <i class="fa fa-venus-mars"></i>
+					<input type="radio" id="rad" name="gender" value="Others">
+					<label for="html">Others</label><br><br>
+				</div>
+
+                <div class="radio-name">
+                    <i class="fa fa-calendar-o"></i>
+					<label for="birthday"><b>Date of birth:</b></label><br>
+					<input type="date" id="birthday" name="birthday" required><br><br>
+				</div>
+
+
+				<div class="radio-name">
+				    <h3>Student info</h3>
+                    <i class="fa fa-male"></i>
+					<input type="radio" id="rad" name="stu" value="First year">
+					<label for="First-year">Grade 11</label><br>
+                   
+                    <i class="fa fa-user"></i>
+					<input type="radio" id="rad" name="stu" value="Transferee">
+					<label for="Transferee">Grade 12</label><br>
+                    
+                    <i class="fa fa-users"></i>
+					<input type="radio" id="rad" name="stu" value="Irregular">
+					<label for="Irregular">Transferee</label><br><br>
+				</div>
+
+
+                <div class="radio-name">
+				    <h3>select your strand</h3>
+                    <i class="fa fa-flask"></i>
+					<input type="radio" id="rad" name="str" value="STEM (Science Technology Engineering and Mathematics)">
+					<label for="STE">STEM (Science Technology Engineering and Mathematics)</label><br>
+                   
+                    <i class="fa fa-pencil-square-o"></i>
+					<input type="radio" id="rad" name="str" value="HUMMS (Humanities and Social Science)">
+					<label for="HUM">HUMMS (Humanities and Social Science)</label><br>
+                    
+                    <i class="fa fa-book"></i>
+					<input type="radio" id="rad" name="str" value="GAS (General Academic Strand)">
+					<label for="GAS">ABM (Accountancy Business and Management)</label><br><br>
+				</div>
+
+
+                <div class="radio-name">
+				    <h3>What Transportation do you use?</h3>
+                    <i class="fa fa-bicycle"></i>
+					<input type="checkbox" id="check" name="B" value="Bicycle">
+					<label for="B">Bicycle</label><br>
+                   
+                    <i class="fa fa-bus"></i>
+					<input type="checkbox" id="check" name="com" value="Commuting (Jeepney, Tricycle, etc.)">
+					<label for="com">By commuting  (Jeepney, Tricycle, etc.)</label><br>
+                    
+                    <i class="fa fa-car"></i>
+					<input type="checkbox" id="check" name="kotse" value="Car">
+					<label for="kotse">Car</label><br>
+
+                    <i class="fa fa-motorcycle"></i>
+					<input type="checkbox" id="check" name="Motor" value="Motorcycle">
+					<label for="Motor">Motorcycle</label><br>
+
+                    <i class="fa fa-male"></i>
+					<input type="checkbox" id="check" name="wala" value="None (done mainly by walking.)">
+					<label for="wala">None (done mainly by walking.)</label><br><br>
+				</div>
+
+
+                <div class="file">
+				    <h4>Submit a picture of your valid school ID.</h4>
+                    <input type="file" id="file" name="filename">
+                    <label for="file">Upload File</label>
+				</div>
+
+
+                <div class="input-name">
+                    <br>
+					<input type="checkbox" class="check-button" id="check">
+                    <label>I accept the terms and condition</label><br>
+				</div>
+
+    
+                
+                <button type="button" id="signUpButton">Register</button>
+                
+
+			</form>
+		</div>
+	</div>
+    
+
+    <script src="script.js"></script>		
+</body>
+
+</html>

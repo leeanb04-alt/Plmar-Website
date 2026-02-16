@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+</head> 
+<style>
+*{      margin: 0;
+        padding: 0;
+        text-decoration: none;
+        }
+body{
+        background: url(https://4kwallpapers.com/images/wallpapers/red-hearts-happy-6232x4156-9266.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+	background-attachment: fixed;
+	font-family: "serif";
+        justify-content: center;
+	align-items: center;
+        min-height: 150vh;
+		}
+.navbar{
+        background:   rgb(0, 17, 94);
+        font-family: 'Trebuchet MS';
+        padding: 15px 15px;
+        position: fixed;
+        top: 0;
+        width: 99%;
+        }
+.navbar:hover {
+    background-color: rgba(0, 119, 255, 0.486);
+}
+.navbar ul li a:hover {
+    color: rgb(0, 35, 75);
+}
+.navdiv{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+.logo a{
+        font-size: 35px;
+        font-weight: 600;
+        color: white;
+        }
+.li2{
+        list-style: none;
+        display: inline-block;
+        }
+li a{
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+        }
+button:hover {
+        background-color:  rgb(4, 66, 136);
+}
+button{
+        background-color: rgb(36, 190, 236);
+        margin-left: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        width: 90px;
+        }
+button a{
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+}
+.wrapper{
+        margin: 200px auto;
+        width: 50%;
+        background-color: white;
+        border-radius: 10px;
+        }
+div.text-box{
+        color: maroon;
+        }
+.text-box h2{
+        font-size: 50px;
+        font-family: "cooper black";
+        color: darkred;
+        }
+.text-box dl{
+        font-size: 15px;
+        font-family: "arial";
+        }       
+.text-box h4{
+        font-size: 20px;
+        font-family: "arial";
+        }
+.img1{
+        max-width:450px;
+        float: left;
+        border-radius: 10px;
+        border: 3px solid maroon;
+        margin-right: 20px; 
+        height: auto;
+        width: 50%;
+        position: left;
+        }
+div.text-box2{
+        color: maroon;
+        margin-left: 20px; 
+        }
+.text-box2 h2{
+        font-size: 42px;
+        font-family: "cooper black";
+        color: darkred;
+        }
+.text-box2 p{
+        font-size: 15px;
+        font-family: "arial";
+        }
+.text-box2 h4{
+        font-size: 20px;
+        font-family: "arial";
+        }
+.text-box2 ul{
+        font-size: 15px;
+        font-family: "arial";
+        margin-left: 20px; 
+        }
+.img2{
+        max-width: 400px;
+        float: right;
+        border-radius: 10px;
+        border: 3px solid maroon;
+        margin-left: 20px; 
+        position: right;
+        height: auto;
+        width: 50%;
+        }
+div.text-box3{
+        color: maroon;
+        margin-left: 20px;
+        }
+.text-box3 h2{
+        font-size: 42px;
+        font-family: "cooper black";
+        color: darkred;
+        }
+.text-box3 p{
+        font-size: 15px;
+        font-family: "arial";
+        }
+.text-box3 h4{
+        font-size: 20px;
+        font-family: "arial";
+        }
+.text-box3 ul{
+        font-size: 15px;
+        font-family: "arial";
+        }
+.img3{
+        max-width: 500px;
+        float: left;
+        border-radius: 10px;
+        border: 3px solid maroon;
+        margin-right: 20px; 
+        position: left;
+        height: auto;
+        width: 50%;
+        }
+div.text-box4{
+        color: maroon;
+        margin-left: 20px;
+        }
+.text-box4 h2{
+        font-size: 50px;
+        font-family: "cooper black";
+        color: darkred;
+        }
+.text-box4 h4{
+        font-size: 20px;
+        font-family: arial;
+        color: darkred;
+        }
+.text-box4 ul{
+        font-size: 15px;
+        font-family: "arial";
+        }
+
+.img4 {
+        max-width: 400px;
+        float: right;
+        border-radius: 10px;
+        border: 3px solid maroon;
+        margin-left: 20px; 
+        position: right;
+        height: auto;
+        width: 50%;
+        }
+        div.text-box4{
+        color: maroon;
+        margin-left: 20px;
+        }
+div.text-box5{
+                color: maroon;
+                margin-right: 20px;
+        }
+.text-box5 h2{
+        font-size: 50px;
+        font-family: "cooper black";
+        color: darkred;
+        }
+.text-box5 h4{
+        font-size: 20px;
+        font-family: arial;
+        color: darkred;
+        }
+.text-box5 ul{
+        font-size: 15px;
+        font-family: "arial";
+        }
+.img5 {
+        max-width: 400px;
+        float: right;
+        border-radius: 10px;
+        border: 3px solid maroon;
+        margin-left: 20px; 
+        position: right;
+        height: auto;
+        width: 50%;
+        }
+        div.text-box3{
+        color: maroon;
+        margin-left: 20px;
+        }
+.text-box6 h2{
+        font-size: 42px;
+        font-family: "cooper black";
+        color: darkred;
+        }
+.text-box6 p{
+        font-size: 15px;
+        font-family: "arial";
+        }
+.text-box6 h4{
+        font-size: 20px;
+        font-family: "arial";
+         color: darkred;
+        }
+.text-box6 ol{
+        font-size: 15px;
+        font-family: "arial";
+        color: darkred;
+        margin-left: 50px
+        }
+.img6 {
+        max-width: 500px;
+        float: left;
+        border-radius: 10px;
+        border: 3px solid maroon;
+        margin-right: 30px; 
+        position: left;
+        height: auto;
+        width: 50%;
+        }
+.img1 .img2 .img3 .img4 .img5 .img6
+{
+    opacity: 1;
+        }
+img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+      .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 25px;
+   width: 100%;
+   background-color: rgb(0, 17, 94);
+   color: white;
+   text-align: center;
+   font-family: 'Trebuchet MS';
+   padding: 15px 15px;
+        }
+    .footer:hover {
+    background-color:  rgba(0, 119, 255, 0.39);
+}
+</style>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="https://plmar.edu.ph/">Pamantasan ng Lungsod ng Marikina</a></div>
+        <ul>
+            <li class="li2"><a href="Image.html">Click here to teleport to Image Gallery</a></li>
+            <button><a href="https://ums.plmar.edu.ph/student-login.aspx">Sign In</a></button>
+            <button><a href="RegistrationForm.html">Log Out</a></button>
+        </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <a href="https://i.imgur.com/1mXSiiZ.jpeg" target="_blank"><img src="https://i.imgur.com/1mXSiiZ.jpeg" class="img1"></a>
+    <div class="text-box">
+        <i><h2>PLMAR Valentines Event</h2>
+        <h4>by S101 Neutrino</h4>
+        <dl>
+                <br>
+                <dt><b>Freedom Wall</b></dt>
+                        <dd>- Made and contributed by STEM students from 101-Neutrino, it is featured in the main booth.</dd>
+                <dt><b>What it is for?</b></dt>
+                        <dd>- It is a safe space to share, write, and post a note that contains unsaid feelings.
+                        </dd>
+                <dt><b>Kaya san ka pa!</b></dt>
+                        <dd>- Kaya next time, isulat na at magpadrawing sa aming booth, malay mo may chance ka pa!</dd></i>
+        </dl>
+        <br>
+        <br>
+    </div>
+        </div>
+
+
+    <div class="wrapper">
+         <a href="https://i.imgur.com/u9m6bgm.jpeg" target="_blank"><img src="https://i.imgur.com/u9m6bgm.jpeg" class="img2"></a>
+    <div class="text-box2">
+        <i><h2>Boquet of Flowers</h2>
+        <h4>by Ma'am Miguel and Ma'am Ashley</h4><br>
+        <ul>
+                <li><b>Fresh blooms for bright minds 🌸✨</b> - Beautiful and affordable flower bouquets are sold at
+                         Pamantasan ng Lungsod ng Marikina (PLMar) 
+                        by Ma’am Miguel and Ma’am Ashley. Perfect for surprises, gifts, or simply brightening someone’s
+                        day on campus. Each bouquet is thoughtfully arranged with fresh flowers to make every moment extra special.</li>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+
+        </ul>
+    </div>
+    </div>
+
+
+    <div class="wrapper">
+           <a href="https://i.imgur.com/3Q2vj5E.jpeg" target="_blank"><img src="https://i.imgur.com/3Q2vj5E.jpeg" class="img3"></a>
+    <div class="text-box3">
+        <i><h2>The Student Teachers</h2>
+        <h4>Moment of Adventure!</h4>
+        <br>
+        <ul>
+                <li><b>Fun Experience</b>-The student teachers truly enjoyed their day at Pamantasan ng Lungsod ng Marikina during the Valentine’s event. The campus was filled with love, laughter, and beautiful moments as everyone came together to celebrate. 
+                        From sweet surprises to fun activities, the event created wonderful memories that made the day extra special for all. They enthusiastically tried every booth, taking part in games, activities, and fun challenges prepared for the event. From sweet treats to interactive experiences, they made sure to explore and enjoy everything the celebration had to offer. Their smiles and cheerful energy added even more warmth to the festive atmosphere.
+
+Beyond the fun, the event strengthened their bond as student teachers, creating shared memories that they will surely cherish. It was truly a heartwarming and unforgettable Valentine’s celebration. 💖✨.</li>
+        </ul>
+    </div>
+    </div>
+
+<div class="wrapper">
+        <a href="https://i.imgur.com/4mmd5rt.jpeg" target="_blank"><img src="https://i.imgur.com/4mmd5rt.jpeg" class="img5"></a>
+    <div class="text-box5">
+        <i><h2>Students' Experience</h2>
+        <h4>Picture of students</h4>
+        <ul>
+                <br>
+                <dt><b>About the pic</b></dt>
+                        <dd>- Based on the image, the students are all smiles as they enjoy the celebration together 💕✨
+
+during the booth event at Pamantasan ng Lungsod ng Marikina, their happy faces and cheerful poses show how much they appreciated the event—visiting booths, spending time with friends, and making the most out of the special day. Truly a moment filled with fun, friendship, and unforgettable memories! 🎉🌸</dd>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+
+
+
+
+
+        </dl>
+    </div>
+        </div>
+
+<div class="wrapper">
+        <a href="https://i.imgur.com/Adq9atZ.jpeg" target="_blank"><img src="https://i.imgur.com/Adq9atZ.jpeg" class="img6"></a>
+    <div class="text-box6">
+        <i><h2>Event Booths</h2>
+        <h4>Booths that made the day lovely!</h4>
+        <br>
+         <ol>   <h4>Day 1</h4>
+                <li><b>Charot Reading</b> </li>
+                <li><b>Muon's are cutiePINS</b> </li>
+                <li><b>Go With the Flower</b> </li>
+                <li><b>Seelie Me</b> </li>
+                <li><b>Doodleville</b> </li>
+                <li><b>Pakasal Tayo</b> </li>
+                <li><b>Blueming</b> </li>
+                <li><b>Cupid's Cute-kutin</b> </li>
+                <li><b>BeAdz</b> </li>
+                <li><b>Pastil ni Esmi at Skrambolicious</b> </li>
+                <br>
+                
+                <h4>Day 2</h4>
+                <li><b>Love is Blind</b> </li>
+                <li><b>Cupid's Slot Machine</b> </li></i>
+                <li><b>Buldak Samgyupz</b> </li>
+                <li><b>KLang</b> </li></i>
+                <li><b>Amouse</b> </li>
+                <li><b>Tumbang Puso</b> </li>
+                <li><b>Cali Cafe</b> </li></i>
+                <li><b>Crafts and Crumbs</b> </li>
+                <li><b>Do-Booth</b> </li></i>
+                <li><b>Sweet Blooms</b> </li>
+        </ol>
+    </div>
+    </div>
+
+     <div class="wrapper">
+        <img src="https://cdn.pixabay.com/photo/2020/06/30/14/37/facebook-5356593_1280.png" class="img4">
+    <div class="text-box4">
+        <i><h2>Thankyou For Visiting!</h2>
+        <h4>Make sure to follow us on our social medias!</h4>
+        <br>
+         <ul>
+                <a href="https://www.instagram.com/official_plmar/"><li><b>Follow us on Instagram</b>: @instagram_PLMar_SHS</li></a>
+                <a href="https://www.facebook.com/PLMarSeniorHighSchool"><li><u><b>Follow us on Facebook</b>: @PLMar Senior High School</u></li></a>
+                <a href="https://x.com/theplmarcsg"><li><b>Follow us on Twitter</b>: @PLMar_Archives</li></a>
+                <a href="https://www.youtube.com/@plmarlibrary6921"><li><b>Follow us on Youtube</b>: @plmar library</li></a>
+                <br>
+                <br>
+                <br>
+        </ul>
+    </div>
+    </div>
+
+
+
+        <div class="footer">
+                <h1><i>copyright © 2024 all rights reserved</i></h1>
+        </div>
+</body>
+</html>
+
+
